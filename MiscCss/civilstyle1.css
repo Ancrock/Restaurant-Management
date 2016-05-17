@@ -1,0 +1,63 @@
+
+/* --------------------
+	STRIP
+--------------------*/	
+	
+#strip {
+	height: 30px;
+	background: url('images/strip_bg.png') repeat-x;
+	color: #fff;
+	font: italic 14px Georgia, serif;
+	text-align: center;
+	padding: 0;
+	}	
+
+#strip .box {
+	position: relative;
+	background: transparent;
+	}
+
+#strip p {padding-top: 5px;}
+
+#back_to_utopia img {
+	float: left;
+	margin-top: -1px;
+	}
+
+
+/* --------------------
+	MISC
+--------------------*/
+
+#circle_of_trust {
+	position: absolute;
+	top: 25px;
+	right: 25px;
+	}
+
+.secure_login {
+	display: block;
+	margin: 15px auto;
+	background: url(images/secure_login.gif) top center no-repeat;
+	height: 56px;
+	color: #fff;
+	font-size: 20px;
+	padding: 20px 0 0 65px;
+	}
+
+.secure_logout {
+	display: block;
+	margin: 15px auto;
+	background: url(images/secure_login.gif) top center no-repeat;
+	height: 56px;
+	color: #fff;
+	font-size: 18px;
+	padding: 8px 0 0 60px;
+	}
+
+#logged_user {
+	font-size: 12px;
+	text-align:left; 
+	font-weight:bold;
+	}
+

@@ -1,0 +1,36 @@
+﻿/* USUAL STUFF */
+body { margin:10px auto; text-align:center; }
+.content { max-width:800px;text-align:left; margin:auto; }
+
+/* THE DIV */
+.simple-ss {
+  width:762px;
+  height:279px;
+  background-color:white;
+  margin:auto;
+  background-image:url('/Images/Sliding_image.jpg');
+  background-position:0;
+  background-repeat:no-repeat;
+  background-size:cover;
+
+/* ANIMATING STUFF */
+  animation-name: slide;
+  animation-duration: 14s;
+  animation-direction: normal;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+}
+
+/* NOTE CODEPEN AUTOGENERATING -PREFIXES */
+@keyframes slide {
+  0% {background-position:0 0;}
+ /* 12.5% {background-position:0 0;}*/
+  25% {background-position:-907px 0;}
+  50% {background-position:-1000px 0;}
+ /* 62.5% {background-position:-1814px 0;}*/
+  75% {background-position:-1200px 0;}
+  /*87.5%{background-position:0 0;}*/
+  100% {background-position:0 0;}
+}
+
+

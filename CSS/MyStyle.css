@@ -1,0 +1,27 @@
+﻿body {
+}
+
+.button-link {
+    font-style:normal;
+    text-decoration: none;
+  border-spacing: inherit;
+    padding: 10px 15px;
+    background: #4479BA;
+    color: #FFF;
+}
+
+.dropdown {
+     font-style:normal;
+     font-size: x-large;
+     font-family:Arial;
+    text-decoration: none;
+  border-spacing: inherit;
+    padding: 10px 15px;
+    background-color:Highlight;
+    color: #FFF;
+}
+.misc{
+    font-size: xx-large;
+    font-family:Arial;
+}
+

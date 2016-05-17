@@ -1,0 +1,66 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Customer.Master.cs" Inherits="WebApplication1.Site2" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd" >
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<style type ="text/CSS">
+    .auto-style1{
+        color: #000000;
+    }
+</style>
+
+
+&nbsp;<html xmlns="http://www.w3.org/1999/xhtml"><head runat="server"><title>My Website</title>
+    <script type="text/javascript" src="../JavaScript/JavaScript.js"></script>
+    <script type="text/javascript">
+        function mainmenu() {
+            $(" #nav ul ").css({ display: "none" }); // Opera Fix
+
+            $(" #nav li").hover(function () {
+                $(this).find('ul:first').css({ visibility: "visible", display: "none" }).show(400);
+            }
+            , function () {
+                $(this).find('ul:first').css({ visibility: "hidden" });
+            });
+        }
+
+        $(document).ready(function () {
+            mainmenu();
+        });
+    </script>
+    <link rel="stylesheet" type="text/css" href="CSS/StyleSheet.css" />
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id="wrapper">
+        <div id="banner">
+        </div>
+        <div id="navigation">
+            <ul id="nav">
+                <li><a href="Customer1.aspx" runat="server">Home</a></li>
+
+                 <li><a href="menu.aspx">Menu</a></li>
+                <li><a href="#">Orders</a>
+                    <ul>
+                        <li><a href="status.aspx">Status</a></li>
+                        <li><a href="Cust_history.aspx">View previous orders</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="About_customer.aspx">About</a></li>
+                <li><a href="default.aspx">Logout</a></li>
+                    </ul>
+
+        </div>
+        <div id="content_area" style="overflow: scroll">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            &nbsp;
+            </asp:ContentPlaceHolder>
+        </div>
+        <div id="footer">
+            <p>All Rights reserved.</p>
+        </div>
+    </div>
+    </form>
+</body>
+</html>

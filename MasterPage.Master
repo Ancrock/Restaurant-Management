@@ -1,0 +1,75 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.Master.cs" Inherits="WebApplication1.Site1" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<style type="text/css">
+    .auto-style1 {
+        color: #000000;
+    }
+</style>
+&nbsp;<html xmlns="http://www.w3.org/1999/xhtml"><head runat="server"><title>My Website</title>
+    <script type="text/javascript" src="../JavaScript/JavaScript.js"></script>
+    <script type="text/javascript" src="../JavaScript/JavaScript1.js"></script>
+    <script type="text/javascript">
+        function mainmenu() {
+            $(" #nav ul ").css({ display: "none" }); // Opera Fix
+
+            $(" #nav li").hover(function () {
+                $(this).find('ul:first').css({ visibility: "visible", display: "none" }).show(400);
+            }
+            , function () {
+                $(this).find('ul:first').css({ visibility: "hidden" });
+            });
+        }
+
+        $(document).ready(function () {
+            mainmenu();
+        });
+    </script>
+    <link rel="stylesheet" type="text/css" href="Css/Main.css" />
+     <link rel="stylesheet" type="text/css" href="Css/Home.css" />
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id="wrapper">
+        <div id="banner">
+        </div>
+        <div id="navigation">
+            <ul id="nav">
+                <li><a href="Default.aspx" runat="server">Home</a></li>
+                <li><a href="menu.aspx" runat="server">Menu</a></li>
+                <li><a href="About_customer.aspx">Location</a></li>
+
+                <li><a href="About_customer.aspx">About</a></li>
+                    </ul>
+
+        </div>
+        <div id="content_area"> <div class="simple-ss" id="simple-ss"> </div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <div id="sidebar" class="auto-style1">
+            Login<br />
+            <br />
+            Username<br />
+            <br />
+            <asp:TextBox ID="TextBox1" runat="server" CssClass="tb5"></asp:TextBox>
+            <br />
+            <br />
+            Password<br />
+            <br />
+            <asp:TextBox ID="TextBox2" runat="server" CssClass="tb5" TextMode="Password"></asp:TextBox>
+            <br />
+            <asp:Label ID="Label1" runat="server"></asp:Label>
+            <br />
+            <br />
+            <asp:Button ID="Button1" runat="server" Text="Login" Width="86px" CssClass="button-link" OnClick="Button1_Click" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <asp:Button ID="Button2" runat="server" Text="Register" CssClass="button-link" OnClick="Button2_Click"/>
+        </div>
+        <div id="footer">
+            <p>All Rights reserved.</p>
+        </div>
+    </div>
+    </form>
+</body>
+</html>

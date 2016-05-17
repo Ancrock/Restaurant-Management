@@ -1,0 +1,59 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Waiter.master.cs" Inherits="WebApplication1.Waiter" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd" >
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+&nbsp;<html xmlns="http://www.w3.org/1999/xhtml"><head runat="server"><title>My Website</title>
+    <script type="text/javascript" src="../JavaScript/JavaScript.js"></script>
+    <script type="text/javascript">
+        function mainmenu() {
+            $(" #nav ul ").css({ display: "none" }); // Opera Fix
+
+            $(" #nav li").hover(function () {
+                $(this).find('ul:first').css({ visibility: "visible", display: "none" }).show(400);
+            }
+            , function () {
+                $(this).find('ul:first').css({ visibility: "hidden" });
+            });
+        }
+
+        $(document).ready(function () {
+            mainmenu();
+        });
+    </script>
+    <link rel="stylesheet" type="text/css" href="Css/Style_Waiter.css" />
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id="wrapper">
+        <div id="banner">
+        </div>
+        <div id="navigation">
+            <ul id="nav">
+                <li><a href="Waiter.aspx" runat="server">Home</a></li>
+
+                 <li><a href="Waiter_menu.aspx">Menu</a></li>
+                <li><a href="#">Orders</a>
+                    <ul>
+                        <li><a href="#">Current Orders</a></li>
+                        <li><a href="History.aspx">Order History</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="About_waiter.aspx">About</a></li>
+                <li><a href="default.aspx">Logout</a></li>
+                    </ul>
+
+        </div>
+        <div id="content_area" style="overflow: scroll">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            &nbsp;
+            </asp:ContentPlaceHolder>
+        </div>
+        <div id="footer">
+            <p>All Rights reserved.</p>
+        </div>
+    </div>
+    </form>
+</body>
+</html>

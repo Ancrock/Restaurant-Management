@@ -1,0 +1,820 @@
+
+* {
+	border-style: none;
+    border-color: inherit;
+    border-width: 0;
+    margin: 6px 0 0 0px;
+    padding: 0;
+    vertical-align: baseline;
+	font-size: 100%;
+	}
+HTML, BODY {
+	padding:0;
+	margin:0;
+	color:#FB7C40;
+	font-family: 'Verdana', 'Arial';
+	font-size: 11px;
+	text-align:center;
+	height:100%;
+	width:100%;
+	line-height:20px;
+	color:#FB7C40;
+}
+A {
+	text-decoration:none;
+	color:#FB7C40;
+}
+/*A:hover
+{
+    color:Red;
+}*/
+TABLE {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+B, STRONG {
+	font-weight:bold;
+}
+HR.clear {
+	clear: both;
+	visibility: hidden;
+}
+.left  {
+	float:left;
+}
+.right  {
+	float:right;
+}
+.hidden {
+	display:none;
+}
+.placeholder {
+	color:#AAA;
+}	
+.gray {
+	color:#ABADB0
+}
+button::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+DIV#body {
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin-bottom: -55px;
+	text-align:left;
+	width:100%;
+	width:auto !important;
+}
+H1 {
+	font-size:36px;
+	font-weight:normal;
+	color:#FB7C40;
+	padding-bottom:30px;
+	line-height:45px;
+}
+
+H2 {
+	font-size:17px;
+	font-weight:normal;
+	line-height:23px;
+}
+
+/* FORMS */
+INPUT.frm {
+	border: 1px solid #6D6E71;
+	height:25px;
+	padding:0 10px;
+			border-radius: 4px;
+	   -moz-border-radius: 4px; 
+	-webkit-border-radius: 4px;
+	        box-shadow: #DDD 2px 2px;
+	-webkit-box-shadow: #DDD 2px 2px;
+	   -moz-box-shadow: #DDD 2px 2px;
+}
+SELECT.frm  {
+	border: 1px solid #6D6E71;
+	height:25px;
+	padding-left:5px;
+			border-radius: 4px; 
+	   -moz-border-radius: 4px; 
+	-webkit-border-radius: 4px;
+	        box-shadow: #DDD 2px 2px;
+	-webkit-box-shadow: #DDD 2px 2px;
+	   -moz-box-shadow: #DDD 2px 2px;
+}
+.w_xs {
+	width:50px;
+}
+.w_s {
+	width:150px;
+}
+.w_m {
+	width:250px;
+}
+
+
+
+
+INPUT.btn {
+	border:0;
+	cursor:pointer;
+	font-variant: small-caps;
+	font-size:14px;
+	height:35px;
+	background-color:#FB7C40;
+	color:white;
+	font-weight:bold;
+	text-align:center;
+	padding:0 15px;
+	        border-radius: 4px; 
+	   -moz-border-radius: 4px; 
+	-webkit-border-radius: 4px;
+	        box-shadow: #DDD 2px 2px; 
+	-webkit-box-shadow: #DDD 2px 2px;
+	   -moz-box-shadow: #DDD 2px 2px;
+}
+INPUT.btn:active {
+	background-color:#FA590C;
+}
+
+INPUT.btn :hover {
+	
+}
+
+INPUT.btn2 {
+	background-color:#FFF;
+	border:1px solid #FB7C40;
+	height:35px;
+	padding:0 15px;
+	color:#FB7C40;
+	font-weight:bold;
+	cursor:pointer;
+}
+
+
+
+/* **** */
+DIV.inner {
+	width:960px;
+	margin:0 auto;
+	text-align:left;
+}
+DIV#top {	
+	background-color:#FFF;
+	width:100%;
+	text-align:center;
+}
+		DIV#tp {
+			font-family: 'Georgia','Palatino','Times New Roman';
+			font-size: 13px;
+			width:100%;
+			height:50px;
+			border-bottom:5px solid #FB7C40;
+			line-height:50px;
+			overflow:hidden;
+			margin:0 auto;
+		}
+		DIV#tp SPAN {
+			float:right;
+		}
+		DIV#header {
+			float:left;
+			height:135px;
+			position:relative;
+		}
+			A#logotype {
+				display:block;
+				height:68px;
+				width:305px;
+				position:relative;
+				top:35px;
+			}
+
+		DIV#login {
+			top:50px;
+			float:right;
+			position:relative;
+		}
+			DIV#login_bt {
+				float:right;
+				min-width:150px;
+				height:40px;
+				background-color:#FFF
+			}
+				DIV#login_bt SPAN.login {
+					display:block;
+					border:1px solid #FB7C40;
+					padding-left:35px;
+					padding-right:10px;
+					background: url('images/civil_registry_ico_login.gif') no-repeat 15px center;
+					font-weight:bold;
+					/* letter-spacing: 1px; */
+					line-height:38px;
+				}
+		DIV#login_popup {
+			position:absolute;
+			width:150px;
+			background-image:url('images/civil_registry_login_popup_arrow.png');
+			background-position: center 4px;
+			background-repeat:no-repeat;
+			border-bottom:1px solid #FB7C40;
+			padding-top:15px;
+			z-index:99;
+		}
+				DIV#login_popup_inner {
+					       box-shadow: #FB7C40 2px 4px 10px;
+					-webkit-box-shadow: #FB7C40 2px 4px 10px;
+					   -moz-box-shadow: #FB7C40 2px 4px 10px;
+					border-left:1px solid #FB7C40;
+					border-right:1px solid #FB7C40;
+					background-color:#FFFFFF;
+				}
+				DIV#login_popup  UL {
+					list-style-type: none;
+				}
+				DIV#login_popup  LI {
+					display:block;
+					line-height:30px;
+					height:30px;
+					border-top:1px solid #FB7C40;
+					
+					font-weight:bold;
+				}
+				DIV#login_popup  SPAN {
+					padding-left:10px;
+				}
+				DIV#login_popup  LI.fist {
+					border:0;
+					background-color:#FFF;
+				}
+				DIV#login_popup  A {
+					padding-left:10px;
+					display:block;
+					height:30px;
+				}
+				DIV#login_popup  A:hover {
+					background-color:#FFF;
+				}
+
+			
+			DIV#search_box {
+				width:315px;
+				
+				float:right;
+				margin-right:15px;
+			}
+				INPUT#search_fld {
+					width:200px;
+					font-family: 'Georgia','Palatino','Times New Roman';
+					font-size:12px;
+					font-style:italic;
+					color:#FB7C40;
+					background-color:#FFF;
+					border:0;
+					border-bottom:1px solid #FB7C40;
+					height:39px;
+					line-height:40px;
+					float:left;
+				}
+				BUTTON#search_sbmt {
+					float:right;
+					width:100px;
+					height:40px;
+					line-height:40px;
+					background-color:#FB7C40;
+					color:#FFFFFF;
+					text-align:center;
+					font-weight:bold;
+					/*letter-spacing: 1px;*/
+					
+				}
+
+/* START :: Top menu */
+DIV#top_menu 
+{
+    
+	height:36px;
+	background-color:#6D6E71;
+}
+	DIV#top_menu  UL {
+		width:100%;
+		list-style-type: none;
+	}
+	DIV#top_menu  LI {
+		float:left;
+		display: block;
+		text-align:center;
+		width:25%;
+	}
+	DIV#top_menu  A {
+		line-height:36px;
+		color:#FFF;
+		display:block;
+		font-weight:bold;
+	}
+	DIV#top_menu  A SPAN {
+		display:block;
+		margin-top:10px;
+		line-height:16px;
+		border-right:1px solid #FFF;
+	}
+	DIV#top_menu  A SPAN.first-child {
+		border-left:1px solid #FFF;
+	}
+	LI.login_digitid A {
+		background-color: #D0D2D3;
+	}
+/* END :: Top menu */
+
+DIV#content {
+	padding-bottom:38px;
+}
+
+/* START :: Homepage */
+DIV#hptop_bg 
+{
+    color:#3036B9;
+    margin-left:0px;
+	width:inherit;
+	background-color:#FEDECF;
+	height:200px;
+	position:absolute;
+	top:inherit;
+	z-index:-2;
+}
+/*DIV#hptop_bg_rationcard 
+{
+    
+    margin-left:0px;
+	width:inherit;
+	background-color:#40A1FB;
+	height:200px;
+	position:absolute;
+	top:inherit;
+	z-index:-2;
+}*/
+
+DIV#hp_left_part {
+	width:277px;
+	margin-right:48px;
+	float:left;
+}
+	DIV#hp_main_img 
+	{
+	    margin-left:196px;
+		width:277px;
+		height:200px;
+	}
+DIV#hp_top_part {
+	float:left;
+	width:635px;
+	margin-left:325px;
+	height:200px;
+}
+	DIV#hp_top_part H1 {
+		padding-top:30px;
+		float:left;
+		display:block;
+		width:310px;
+		margin-right:15px;
+	}
+	DIV#hp_top_part H3 {
+		padding-top:30px;
+		float:left;
+		display:block;
+		width:310px;
+		margin-right:15px;
+	}
+	DIV#hp_info {
+		padding-top:30px;
+		float:left;
+		width:310px;
+		color:#6D6E71;
+		font-size:20px;
+		line-height:30px;
+	}
+DIV#hp_boxes {
+		margin-top:27px;
+		float:left;
+		width:635px;
+	}
+	DIV.sqr {
+		display:block;
+		position:relative;
+		width:308px;
+		height:153px;
+		margin-bottom:20px;
+		float:left;
+		overflow: hidden;
+		cursor:pointer;
+		border:1px solid #FB7C40;
+		box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		-ms-box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+	}
+	DIV#hpbox_left {
+		margin-right:15px;
+	}
+	DIV.hpbox_title {
+		position:relative;
+		font-size:20px;
+		line-height:30px;
+		height:125px;
+		padding:15px 15px 15px 170px;
+	}
+	DIV.hpbox_text {
+		position:absolute;
+		background-color:#FEDECF;
+		height:155px;
+		width:308px;
+	}
+	DIV.hpbox_text P {
+		padding:10px 15px 10px 70px;
+		background: url('images/civil_registry_ico_login_big.gif') no-repeat 25px center;
+		font-size:12px;
+		line-height:20px;
+	}
+	SPAN.htbox_text_title {
+		font-weight:bold;
+		line-height:35px;
+	}
+	DIV.hpbox_img1 {
+		background: url('images/child_birth.jpg') no-repeat 15px center;
+		position:relative;
+		font-size:20px;
+		line-height:30px;
+		height:125px;
+		padding:15px 15px 15px 170px;
+	}
+	DIV.hpbox_img2 
+	{
+		background: url('images/child_birth_1.jpg') no-repeat 15px center;
+		position:relative;
+		font-size:20px;
+		line-height:30px;
+		height:125px;
+		padding:15px 15px 15px 170px;
+	}
+	DIV.hpbox_img3 {
+		background: url('images/certificate-of-death.gif') no-repeat 15px center;
+		position:relative;
+		font-size:20px;
+		line-height:30px;
+		height:125px;
+		padding:15px 15px 15px 170px;
+	}
+	DIV.hpbox_img4 
+	{
+		background: url('images/death(1).jpg') no-repeat 15px center;
+		position:relative;
+		font-size:20px;
+		line-height:30px;
+		height:125px;
+		padding:15px 15px 15px 170px;
+	}
+	DIV.hpbox_img5 {
+		background: url('images/drivinglicense(1).jpg') no-repeat 15px center;
+		position:relative;
+		font-size:20px;
+		line-height:30px;
+		height:125px;
+		padding:15px 15px 15px 170px;
+	}
+	DIV.hpbox_img6 
+	{
+		background: url('images/drivinglicense(2).jpg') no-repeat 15px center;
+		position:relative;
+		font-size:20px;
+		line-height:30px;
+		height:125px;
+		padding:15px 15px 15px 170px;
+	}
+	DIV.hpbox_img7 {
+		background: url('images/marriage(1).jpg') no-repeat 15px center;
+		position:relative;
+		font-size:20px;
+		line-height:30px;
+		height:125px;
+		padding:15px 15px 15px 170px;
+	}
+	DIV.hpbox_img8 
+	{
+		background: url('images/marriage(2).jpg') no-repeat 15px center;
+		position:relative;
+		font-size:20px;
+		line-height:30px;
+		height:125px;
+		padding:15px 15px 15px 170px;
+	}
+	DIV.hpbox_img9 {
+		background: url('images/appliactio.jpg') no-repeat 15px center;
+		position:relative;
+		font-size:20px;
+		line-height:30px;
+		height:125px;
+		padding:15px 15px 15px 170px;
+	}
+	DIV.hpbox_img10 
+	{
+		background: url('images/rationcard(3).jpg') no-repeat 15px center;
+		position:relative;
+		font-size:20px;
+		line-height:30px;
+		height:125px;
+		padding:15px 15px 15px 170px;
+	}
+/* END :: Homepage */
+
+
+/* START :: Subpages*/
+DIV#left_content {
+	float:left;
+	width:277px;
+	margin-right:48px;
+	padding-top:38px;
+}
+
+DIV#left_content P {
+	color:#686868;
+	font-size:15px;
+	line-height:23px;
+	margin-bottom:15px;
+}
+DIV#right_content {
+	float:right;
+	width:635px;
+}
+DIV#top_image {
+	width:635px;
+	height:200px;
+	margin-bottom:40px;
+}
+IMG.intext {
+	vertical-align:middle;
+}
+SPAN.big {
+	color:#686868;
+	font-size:25px;
+	line-height:30px;
+}
+DIV.ok_ico {
+	color:#6D6E71;
+	background: url('images/civil_registry_ok_ico.gif') no-repeat left center;
+	padding-left:80px;
+	font-size:20px;
+	line-height:30px;
+	margin-top:38px;
+}
+
+DIV#frmreg {
+	border-top:1px solid #FB7C40;
+	margin-top:5px;
+	margin-bottom:25px;
+	font-weight:bold;
+}
+	DIV.frmreg_block_title {
+		float:left;	
+		line-height:19px;
+		padding-right:30px;
+		margin-bottom:10px;
+	}
+	DIV.frmreg_block {
+		border-bottom:1px solid #FB7C40;
+		padding:10px 0 0 0;
+		/* line-height:30px; */
+	}
+	DIV.frm_fld {
+		float:right;
+		width:440px;
+		height:40px;
+	}
+	DIV.frm_fld SPAN {
+		font-weight:normal;
+		width:150px;
+		float:left;
+		text-align:right;
+		color:#686868;
+		padding-right:10px;
+
+	}
+	DIV.frm_fld SPAN.long {
+		line-height:15px;
+		
+	}	
+	LABEL {
+		color:#686868;
+		padding-right:20px;
+	}
+	DIV#submitbt {
+		text-align:center;
+	}
+/* END :: Subpages*/
+
+
+/* START :: Left menu */	
+UL#left_menu {
+	float:left;
+	width:100%;
+	margin-top:27px;
+}
+	UL#left_menu LI  {
+		display:block;
+		color:#676868;
+		border-bottom:1px solid #FB7C40;
+		height:50px;
+		font-weight:bold;
+		font-size:12px;
+	}
+	UL#left_menu LI.first_child  {
+		border-top:1px solid #FB7C40;
+	}
+	UL#left_menu A {
+		color:#676868;
+		display:block;
+		line-height:50px;
+	}
+	UL#left_menu A:hover {
+		color:Red;
+	}
+	UL#left_menu LI.first_child A {
+		border-top:0;
+	}
+	UL#left_menu LI.active  A {
+		color:#FB7C40;
+	}
+/* END :: Left menu */
+
+
+/* START :: Footer */
+DIV#push {
+	height:55px;
+}
+DIV#footer {
+	height:55px;
+	width:100%;
+}	
+	DIV#bottom {
+		background-color:#6D6E71;
+		height:55px;
+	}
+	DIV#footer_body {
+		color:#FFF;
+		font-family: 'Georgia','Palatino','Times New Roman';
+		font-size:11px;
+		line-height:55px;
+		margin:0 auto;
+		text-align:left;
+		width:960px;
+	}
+		A#footer_link1 {
+			color:#FFF;
+			display:block;
+			float:right;
+			text-align:right;
+			height:55px;
+			margin-right:125px;
+		}
+		A#footer_link2 {
+			color:#FFF;
+			display:block;
+			float:right;
+			text-align:right;
+			width:200px;
+			height:55px;
+		}
+/* END :: Footer */
+
+/* ************************ */
+/* screen width 635px-960px */
+/* ************************ */
+@media only screen and (min-width: 635px) and  (max-width: 960px) {
+	DIV.inner {	
+		width:635px;
+	}
+	DIV#top_image {
+		display:none;
+	}
+	DIV#hp_top_part {
+		width:310px;
+	}
+	DIV#left_content {
+		width:100%;
+		padding-right:0;
+		float:none;
+	}
+	DIV#search_box {
+		display:none;
+	}
+	DIV#footer_body {
+		width:635px;
+	}
+		A#footer_link1 {
+			display:none
+		}
+}
+
+
+
+/* ******************* */
+/* screen width <635px */
+/* ******************* */
+@media only screen and (max-width: 635px) {
+	DIV#tp {
+		text-align:center;
+	}
+	DIV#tp A {
+		display:none;
+	}
+	DIV#tp SPAN {
+		float:none;
+	}
+	DIV#top_menu  LI.rspnzv_hidden {
+		display:none;
+	}
+	DIV#top_menu  LI {
+		width:33%;
+	}
+	DIV.inner {	
+		width:310px;
+	}
+	DIV#left_content {
+		width:100%;
+		padding-right:0;
+		float:none;
+	}
+	DIV#search_box {
+		display:none;
+	}
+	
+	DIV#login {
+		clear:both;
+		height:60px;
+		position:static;
+	}
+		DIV#login_bt {
+			position:static;
+			width:310px;
+			top:0;
+			border:0;
+		}	
+		DIV#login_bt SPAN.login {
+			padding-left:35px;
+		}
+	DIV#hp_left_part {
+		margin-right:0;
+		width:310px;
+	}
+	DIV#hp_top_part {
+		width:310px;
+		margin-left:0;
+	}
+	DIV#hp_info, DIV#hp_main_img {
+		display:none;
+	}
+	
+	DIV#hptop_bg {
+		top:286px;
+	}
+	
+	
+
+	DIV#top_image {
+		display:none;
+	}
+	DIV#right_content {
+		float:none;
+		width:100%;
+	}
+	
+	DIV#hp_boxes {
+		margin-top:27px;
+		float:left;
+		width:310px;
+	}
+	
+	DIV.frmreg_block DIV {
+		float:none;
+		width:100%;
+		height:auto;
+		padding-bottom:10px;
+	}
+	DIV.frmreg_block DIV SPAN {
+		width:100%;
+		display: block;
+		text-align:left;
+		padding-right:0;
+	}
+	
+	DIV#footer_body {
+		width:310px;
+	}
+		A#footer_link1, A#footer_link2 {
+			display:none
+		}
+	DIV#footer_body {
+			font-size:10px;
+	}
+}

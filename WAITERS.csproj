@@ -1,0 +1,376 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{73BE0936-705D-47EE-80C1-840F368CC47B}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WebApplication1</RootNamespace>
+    <AssemblyName>WebApplication1</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="About_cook.aspx" />
+    <Content Include="About_customer.aspx" />
+    <Content Include="About_waiter.aspx" />
+    <Content Include="Cook_menu.aspx" />
+    <Content Include="CSS\Main.css" />
+    <Content Include="CSS\MyStyle.css" />
+    <Content Include="CSS\Home.css" />
+    <Content Include="CSS\Style_Waiter.css" />
+    <Content Include="Customer1.aspx" />
+    <Content Include="Database.sql" />
+    <Content Include="Default_Menu.aspx" />
+    <Content Include="Images\appetizer.jpg" />
+    <Content Include="Images\Appetizer\appe11.jpg" />
+    <Content Include="Images\Appetizer\appe22.jpg" />
+    <Content Include="Images\Appetizer\appe3.jpg" />
+    <Content Include="Images\breads.jpg" />
+    <Content Include="Images\Breads\bread.jpg" />
+    <Content Include="Images\Breads\bread1.jpg" />
+    <Content Include="Images\Breads\bread3.jpg" />
+    <Content Include="Images\Clock.wav" />
+    <Content Include="Images\Customer_background.jpg" />
+    <Content Include="Images\DESSERTS\desst1.jpg" />
+    <Content Include="Images\DESSERTS\desst2.jpg" />
+    <Content Include="Images\DESSERTS\desst3.jpg" />
+    <Content Include="Images\dessserts.jpg" />
+    <Content Include="Images\Food3.wav" />
+    <Content Include="Images\grid-alt.png" />
+    <Content Include="Images\grid-header.png" />
+    <Content Include="Images\grid-pgr.png" />
+    <Content Include="Images\MAIN COURCE\curry1.jpg" />
+    <Content Include="Images\MAIN COURCE\curry2.jpg" />
+    <Content Include="Images\MAIN COURCE\curry3.jpg" />
+    <Content Include="Images\main course.jpg" />
+    <Content Include="Images\restaurant.jpg" />
+    <Content Include="Images\rices.jpg" />
+    <Content Include="Images\RICES\RICE1.jpg" />
+    <Content Include="Images\RICES\RICE2.jpg" />
+    <Content Include="Images\RICES\RICE3.jpg" />
+    <Content Include="Images\Sliding_image.jpg" />
+    <Content Include="Images\soup and salad 1.jpg" />
+    <Content Include="Images\SOUP\hot_sour soup.jpg" />
+    <Content Include="Images\SOUP\tomatoe soup.jpg" />
+    <Content Include="Images\SOUP\veg soup.jpg" />
+    <Content Include="Images\Ticking-clock.gif" />
+    <Content Include="Images\Waiters.jpg" />
+    <Content Include="Images\waitress_serving.jpg" />
+    <Content Include="JavaScript\JavaScript.js" />
+    <Content Include="JavaScript\JavaScript1.js" />
+    <Content Include="menu.aspx" />
+    <Content Include="MiscCss\bundle-bundle_jquery-tools_head.css" />
+    <Content Include="MiscCss\bundle-bundle_myeservices_head.css" />
+    <Content Include="MiscCss\civilstyle.css" />
+    <Content Include="MiscCss\civilstyle1.css" />
+    <Content Include="MiscCss\civilstyle2.css" />
+    <Content Include="MiscCss\coesys_login_select.css" />
+    <Content Include="MiscCss\fancyhead.css" />
+    <Content Include="MiscCss\head.css" />
+    <Content Include="miscjs\bundle-bundle_civilregistry-sp_defer.js" />
+    <Content Include="miscjs\bundle-bundle_common-js_defer.js" />
+    <Content Include="miscjs\bundle-bundle_epolling_defer.js" />
+    <Content Include="miscjs\bundle-bundle_finance-sp_defer.js" />
+    <Content Include="miscjs\bundle-bundle_health-sp_defer.js" />
+    <Content Include="miscjs\bundle-bundle_jquery-tools_defer.js" />
+    <Content Include="miscjs\bundle-bundle_jquery_head.js" />
+    <Content Include="miscjs\bundle-bundle_myeservices_defer.js" />
+    <Content Include="miscjs\bundle-bundle_sign-crypto_defer.js" />
+    <Content Include="miscjs\bundle-bundle_tax-sp_defer.js" />
+    <Content Include="miscjs\bundle-bundle_traffic-sp_defer.js" />
+    <Content Include="miscjs\eservicesdefer.js" />
+    <Content Include="miscjs\facydefer.js" />
+    <Content Include="miscjs\ga.js" />
+    <Content Include="miscjs\JavaScript.js" />
+    <Content Include="miscjs\javascript1.js" />
+    <Content Include="miscjs\jquery-1.10.1.js" />
+    <Content Include="miscjs\jquery-1.4.1.min.js" />
+    <Content Include="miscjs\jquery-ui-1.10.4.custom.js" />
+    <Content Include="miscjs\jquery-ui-1.9.2.custom.js" />
+    <Content Include="packages.config" />
+    <Content Include="MasterPage.Master" />
+    <Content Include="Default.aspx" />
+    <Content Include="Customer.Master" />
+    <Content Include="Customer.aspx" />
+    <Content Include="Register.Master" />
+    <Content Include="Register.aspx" />
+    <Content Include="Cook.Master" />
+    <Content Include="Cook.aspx" />
+    <Content Include="Cust_history.aspx" />
+    <None Include="Resources\Kalimba.mp3" />
+    <None Include="Resources\Main.wav" />
+    <Content Include="Waiter.Master" />
+    <Content Include="Waiter.aspx" />
+    <Content Include="History.aspx" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="CSS\StyleSheet.css" />
+    <Content Include="status.aspx" />
+    <Content Include="Waiter_menu.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About_cook.aspx.cs">
+      <DependentUpon>About_cook.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="About_cook.aspx.designer.cs">
+      <DependentUpon>About_cook.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="About_customer.aspx.cs">
+      <DependentUpon>About_customer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="About_customer.aspx.designer.cs">
+      <DependentUpon>About_customer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="About_waiter.aspx.cs">
+      <DependentUpon>About_waiter.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="About_waiter.aspx.designer.cs">
+      <DependentUpon>About_waiter.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Cook_menu.aspx.cs">
+      <DependentUpon>Cook_menu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Cook_menu.aspx.designer.cs">
+      <DependentUpon>Cook_menu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Customer1.aspx.cs">
+      <DependentUpon>Customer1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Customer1.aspx.designer.cs">
+      <DependentUpon>Customer1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default_Menu.aspx.cs">
+      <DependentUpon>Default_Menu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default_Menu.aspx.designer.cs">
+      <DependentUpon>Default_Menu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="menu.aspx.cs">
+      <DependentUpon>menu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="menu.aspx.designer.cs">
+      <DependentUpon>menu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="MasterPage.Master.cs">
+      <DependentUpon>MasterPage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPage.Master.designer.cs">
+      <DependentUpon>MasterPage.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Customer.Master.cs">
+      <DependentUpon>Customer.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Customer.Master.designer.cs">
+      <DependentUpon>Customer.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Customer.aspx.cs">
+      <DependentUpon>Customer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Customer.aspx.designer.cs">
+      <DependentUpon>Customer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Register.Master.cs">
+      <DependentUpon>Register.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Register.Master.designer.cs">
+      <DependentUpon>Register.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Cook.Master.cs">
+      <DependentUpon>Cook.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Cook.Master.designer.cs">
+      <DependentUpon>Cook.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Cook.aspx.cs">
+      <DependentUpon>Cook.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Cook.aspx.designer.cs">
+      <DependentUpon>Cook.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="status.aspx.cs">
+      <DependentUpon>status.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="status.aspx.designer.cs">
+      <DependentUpon>status.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Waiter.Master.cs">
+      <DependentUpon>Waiter.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Waiter.Master.designer.cs">
+      <DependentUpon>Waiter.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Waiter.aspx.cs">
+      <DependentUpon>Waiter.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Waiter.aspx.designer.cs">
+      <DependentUpon>Waiter.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="History.aspx.cs">
+      <DependentUpon>History.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="History.aspx.designer.cs">
+      <DependentUpon>History.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Cust_history.aspx.cs">
+      <DependentUpon>Cust_history.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Cust_history.aspx.designer.cs">
+      <DependentUpon>Cust_history.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Waiter_menu.aspx.cs">
+      <DependentUpon>Waiter_menu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Waiter_menu.aspx.designer.cs">
+      <DependentUpon>Waiter_menu.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>1823</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:1823/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
